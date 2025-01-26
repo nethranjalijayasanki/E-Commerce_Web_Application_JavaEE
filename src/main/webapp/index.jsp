@@ -38,10 +38,10 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="adminDropdown">
                         <li><a class="dropdown-item" href="views/admin/dashboard.jsp"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-                        <li><a class="dropdown-item" href="admin/products.jsp"><i class="fas fa-box"></i> Manage Products</a></li>
-                        <li><a class="dropdown-item" href="admin/categories.jsp"><i class="fas fa-list"></i> Manage Categories</a></li>
-                        <li><a class="dropdown-item" href="admin/orders.jsp"><i class="fas fa-clipboard-list"></i> Manage Orders</a></li>
-                        <li><a class="dropdown-item" href="admin/users.jsp"><i class="fas fa-users"></i> Manage Users</a></li>
+                        <li><a class="dropdown-item" href="views/admin/products.jsp"><i class="fas fa-box"></i> Manage Products</a></li>
+                        <li><a class="dropdown-item" href="views/admin/categories.jsp"><i class="fas fa-list"></i> Manage Categories</a></li>
+                        <li><a class="dropdown-item" href="views/admin/orders.jsp"><i class="fas fa-clipboard-list"></i> Manage Orders</a></li>
+                        <li><a class="dropdown-item" href="views/admin/users.jsp"><i class="fas fa-users"></i> Manage Users</a></li>
                     </ul>
                 </li>
 
@@ -52,15 +52,15 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="customerDropdown">
                         <li><a class="dropdown-item" href="views/customer/dashboard.jsp"><i class="fas fa-home"></i> Dashboard</a></li>
-                        <li><a class="dropdown-item" href="customer/products.jsp"><i class="fas fa-search"></i> Browse Products</a></li>
+                        <li><a class="dropdown-item" href="views/customer/products.jsp"><i class="fas fa-search"></i> Browse Products</a></li>
                         <li>
-                            <a class="dropdown-item d-flex justify-content-between align-items-center" href="customer/cart.jsp">
+                            <a class="dropdown-item d-flex justify-content-between align-items-center" href="views/customer/cart.jsp">
                                 <span><i class="fas fa-shopping-cart"></i> View Cart</span>
                                 <span class="badge bg-danger">3</span>
                             </a>
                         </li>
-                        <li><a class="dropdown-item" href="customer/orders.jsp"><i class="fas fa-history"></i> Order History</a></li>
-                        <li><a class="dropdown-item" href="customer/profile.jsp"><i class="fas fa-user-cog"></i> Profile</a></li>
+                        <li><a class="dropdown-item" href="views/customer/order.jsp"><i class="fas fa-history"></i> Order History</a></li>
+                        <li><a class="dropdown-item" href="views/customer/profile.jsp"><i class="fas fa-user-cog"></i> Profile</a></li>
                     </ul>
                 </li>
             </ul>
@@ -81,7 +81,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="logout.jsp">
+                    <a class="nav-link" href="views/logout.jsp">
                         <i class="fas fa-sign-out-alt"></i> Logout
                     </a>
                 </li>

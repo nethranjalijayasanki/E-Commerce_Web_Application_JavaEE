@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet("/admin/AddProductServlet")
-public class AddProduct extends HttpServlet {
+public class AddProductServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         String name = request.getParameter("name");
@@ -22,6 +22,6 @@ public class AddProduct extends HttpServlet {
         ProductDAO productDAO = new ProductDAO();
         productDAO.addProduct(product);
 
-        response.sendRedirect("view-products.jsp");
+        response.sendRedirect("orders.jsp");
     }
 }
