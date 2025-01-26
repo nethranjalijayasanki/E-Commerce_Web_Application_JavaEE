@@ -29,7 +29,7 @@ public class CategoryDAO {
                 String name = rs.getString("name");  // Assuming 'name' is a column in the 'categories' table
                 String description = rs.getString("description");  // Optional, adjust based on your schema
 
-                Category category = new Category(id, name, description);
+                Category category = new Category(id,name,description);
                 categories.add(category);
             }
         } catch (SQLException e) {
@@ -48,11 +48,12 @@ public class CategoryDAO {
 
         try {
             conn = DbConnection.getInstance().getConnection();
-            String sql = "INSERT INTO categories (name, description) VALUES (?, ?)";  // Adjust column names as needed
+            String sql = "INSERT INTO categories (id,name, description) VALUES (?,?, ?)";  // Adjust column names as needed
             stmt = conn.prepareStatement(sql);
 
-            stmt.setString(1, category.getName());
-            stmt.setString(2, category.getDescription());  // Set category description
+            stmt.setInt(1, category.getId());
+            stmt.setString(2, category.getName());
+            stmt.setString(3, category.getDescription());  // Set category description
 
             int rowsAffected = stmt.executeUpdate();
             if (rowsAffected > 0) {
